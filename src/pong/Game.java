@@ -86,7 +86,7 @@ public class Game implements Runnable, KeyListener {
 
             update();
             draw(renderer.getGraphics2D());
-            renderer.render();  // Paints the image drawn by renderer's Graphics2D object
+            renderer.render();
 
             if (network.isServer() && !network.isClientConnected()) {
                 network.listenForClient();
